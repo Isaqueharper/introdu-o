@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="introducao.css">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    var progressBar = document.getElementById("myProgressBar");
+    var width = 0;
+
+    function updateProgressBar() {
+        if (width >= 100) {
+            clearInterval(progressInterval);
+        } else {
+            width++;
+            progressBar.style.width = width + '%';
+            progressBar.innerHTML = width + '%';
+        }
+    }
+
+    var progressInterval = setInterval(updateProgressBar, 50); // Atualiza a barra a cada 50 milissegundos
+
+    setTimeout(function () {
+        window.location.href = "introducao.html";
+        clearInterval(progressInterval); // Para a atualização da barra ao redirecionar
+    }, 5000); // 5000 milissegundos = 5 segundos
+</script>
+
+  <a href="home.html">
+    <div class="stage">
+        <div class="layer"></div>
+        <!-- Adicione quantas camadas (layers) forem necessárias -->
+    </div>
+</a>
+<style>
+    * *,
+    *::before,
+    *::after {
+        animation-play-state: running !important;
+    }
+</style>
+
+<script>
+    setTimeout(function () {
+        window.location.href = "tete.html";
+    }, 5000); // 5000 milissegundos = 5 segundos
+</script>
+    <a href="home.html">
+    <div class="stage">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+      </div>
+
+      
+      </a>
+      <style>
+        * *, *::before, *::after { 
+          animation-play-state: running !important;
+        }
+      </style>
+      <script>window.setTimeout = null;</script>
+       
+      
+
+
+</body>
+</html>
